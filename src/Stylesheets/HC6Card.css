@@ -1,0 +1,24 @@
+.HC6-card {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: white;
+  padding: 0 10px;
+  margin: 10px;
+  border-radius: 12px;
+  text-decoration: none;
+  width: 83vw;
+}
+.HC6-card-container {
+  display: flex;
+  white-space: nowrap;
+  overflow: auto;
+  margin: 10px;
+}
+.HC6-card-container::-webkit-scrollbar {
+  display: none;
+}
+.HC6-card-content {
+  display: flex;
+  align-items: center;
+}

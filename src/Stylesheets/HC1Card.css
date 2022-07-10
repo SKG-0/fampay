@@ -1,0 +1,38 @@
+.HC1-scrollable-cards-container,
+.HC1-nonscrollable-cards-container {
+  display: flex;
+  padding: 10px;
+}
+
+.HC1-scrollable-cards-container {
+  white-space: nowrap;
+  overflow: auto;
+}
+
+.HC1-card {
+  display: flex;
+  box-sizing: border-box;
+  align-items: center;
+  margin: 0 10px;
+  background-color: #fbaf03;
+  border-radius: 12px;
+}
+
+.HC1-scrollable-cards-container::-webkit-scrollbar {
+  display: none;
+}
+
+.HC1-card-title {
+  padding: 0 10px;
+  font-size: 0.7em;
+}
+
+.HC1-card-icon {
+  padding-left: 10px;
+  height: 8px;
+}
+
+.non-scrollable {
+  width: 45vw;
+  margin-right: 3%;
+}

@@ -1,0 +1,9 @@
+.HC9-card-container {
+  display: flex;
+  white-space: nowrap;
+  overflow: auto;
+  margin: 10px;
+}
+.HC9-card-container::-webkit-scrollbar {
+  display: none;
+}

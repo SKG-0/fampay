@@ -1,0 +1,16 @@
+.HC5-cards-container {
+  display: flex;
+  white-space: nowrap;
+  overflow: auto;
+  margin: 10px;
+}
+.HC5-cards-container::-webkit-scrollbar {
+  display: none;
+}
+.HC5-card {
+  height: 120px;
+  width: 230px;
+  background-repeat: no-repeat;
+  margin: 0 10px;
+  border-radius: 12px;
+}
