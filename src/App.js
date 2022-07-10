@@ -13,10 +13,12 @@ const App = () => {
   const [Refresh, setRefresh] = useState(false);
   const [data1, setData1] = useState([]);
   useEffect(() => {
+    //setting data in state
     data().then((data) => {
       setData1(data);
     });
   }, [Refresh]);
+  //refresh
   const refresh = () => {
     const current = Refresh;
     setRefresh(!current);
@@ -40,6 +42,7 @@ const App = () => {
       ) : (
         <div className="cards-container">
           <PullToRefresh onRefresh={refresh}>
+            {/* rendering all components */}
             <HC3CardView cardsData={data1.HC3Cards} />
             <HC6CardView cardsData={data1.HC6Cards} />
             <HC5CardView cardsData={data1.HC5Cards} />

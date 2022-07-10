@@ -1,6 +1,7 @@
 import "../../Stylesheets/HC1Card.css";
 import React from "react";
 const HC1Card = ({ card, isScrollable }) => {
+  //function for formatted text to render according to colours
   const FormattedText = (text, entities, textName) => {
     let splittedArray = text.split("{}");
     let first = splittedArray[0];

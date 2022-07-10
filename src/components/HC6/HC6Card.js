@@ -2,6 +2,7 @@ import "../../Stylesheets/HC6Card.css";
 import React from "react";
 import arrow from "../../assets/arrow.svg";
 const HC6Card = ({ card }) => {
+  //function for rendering formatted text with the colours accordingly
   const FormattedText = (text, entities) => {
     let splittedArray = text.split("{}");
     let first = splittedArray[0];

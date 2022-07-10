@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import HC1Card from "./HC1Card";
 
 const HC1CardView = ({ cardsData }) => {
+  //setting both types of cards
   const [scrollCards, setscrollCards] = useState();
   const [nonscrollCards, setNonscrollCards] = useState();
 

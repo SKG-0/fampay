@@ -5,6 +5,7 @@ import React from "react";
 const HC5CardView = ({ cardsData }) => {
   const [data, setData] = useState();
   useEffect(() => {
+    //collecting data of all cards with HC5 type
     const tempCards = [];
     cardsData?.forEach((card) => {
       tempCards.push(...card.cards);

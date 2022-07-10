@@ -10,6 +10,7 @@ const HC3Card = ({ card }) => {
   useEffect(() => {
     setCardDetails(card);
   }, [card]);
+  //change class name for display right buttons
   const startTouch = () => {
     if (!timer) {
       timer = setTimeout(() => {
@@ -24,6 +25,7 @@ const HC3Card = ({ card }) => {
       timer = null;
     }
   };
+  //function for rendering formatted text according to different colours
   const FormattedText = (text, entities, textName) => {
     let splittedArray = text.split("{}");
     let first = splittedArray[0];
@@ -75,10 +77,8 @@ const HC3Card = ({ card }) => {
           <div className="HC3-card-right-buttons" ref={buttons}>
             <div
               className="HC3-card-right-btn"
-              onKeyPress={() => {
-                setCardDetails(null);
-              }}
               onClick={() => {
+                //set card details to null so that on refresh it can be loaded
                 setCardDetails(null);
               }}
             >
@@ -88,10 +88,8 @@ const HC3Card = ({ card }) => {
 
             <div
               className="HC3-card-right-btn"
-              onKeyPress={() => {
-                setCardState(true);
-              }}
               onClick={() => {
+                //set card state to true so that on refresh the component doesn't displays
                 setCardState(true);
               }}
             >
