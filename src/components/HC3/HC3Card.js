@@ -113,7 +113,7 @@ const HC3Card = ({ card }) => {
               backgroundSize: "cover",
             }}
           >
-            <h2 style={{ marginTop: "6rem" }}>
+            <h2 style={{ marginTop: "50%" }}>
               {FormattedText(
                 cardDetails.formatted_title.text,
                 cardDetails.formatted_title.entities,
